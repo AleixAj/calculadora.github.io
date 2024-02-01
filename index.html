@@ -2,14 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Test Calculadora</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>Bootcamp JS - JavaScript SandBox</h1>
+    <script type="text/javascript" src="/src/main.js"></script>
+    <div class="form">
+      <div class="title">Calculadora</div>
+      <div class="subtitle">
+        Introdueix el teu Usuari i els 3 Operands desitjats.
+      </div>
+      <div class="input-container ic">
+        <input id="nomUsuari" class="input" type="text" placeholder=" " />
+        <label for="nomUsuari" class="placeholder">Usuari</label>
+      </div>
+      <div class="input-container ic">
+        <input
+          id="operand1"
+          class="input"
+          type="text"
+          placeholder=" "
+          required
+        />
+        <label for="operand1" class="placeholder">Operand 1</label>
+      </div>
+      <div class="input-container ic">
+        <input
+          id="operand2"
+          class="input"
+          type="text"
+          placeholder=" "
+          required
+        />
+        <label for="operand2" class="placeholder">Operand 2</label>
+      </div>
+      <div class="input-container ic">
+        <input id="operand3" class="input" type="text" placeholder=" " />
+        <label for="operand3" class="placeholder">Operand 3</label>
+      </div>
+      <button type="text" class="submit" onclick="Operar()">Operar</button>
+      <div class="input-container ic">
+        <p id="resultat" class="text" type="text" placeholder=" " readonly></p>
+      </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
